@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 align="center">{{title}}</h1>
+    <div align="center" class="screen">
+        <p class="para">{{print}}</p>
+        <input type="number" #tb class="tb" placeholder="Value to push">
+    </div>
+    <div class="buttonSection">
+        <button (click)="push(tb.value)">Push</button>
+        <button (click)="display()">Display</button>
+        <button (click)="pop()">Pop</button>
+        <button (click)="peek()">Peek</button>
+        <button (click)="clear()">Clear</button>
+    </div>
+</div>
